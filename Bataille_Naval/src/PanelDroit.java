@@ -7,10 +7,10 @@ public class PanelDroit extends JPanel{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private PannelDroitContenue grille;
+	private GrilleBoutton grille;
 	
 	public PanelDroit() {
-		this.grille = new PannelDroitContenue();
+		this.grille = new GrilleBoutton();
 		this.setLayout(new BorderLayout());
 		this.add(grille, BorderLayout.CENTER);
 	}
