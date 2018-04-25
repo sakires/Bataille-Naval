@@ -1,20 +1,19 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.JButton;
 
-public class CaseBoutton {
-	private JButton boutton;
-	private int x;//numero de la  collonne  
+public class CaseBoutton extends JButton implements ActionListener{
+
+	private int x;//numero de la  colonne  
 	private int y ;//numero de la ligne
 	public CaseBoutton( int x, int y) {
-		this.boutton = new JButton();
+
 		this.x = x;
 		this.y = y;
 	}
-	public JButton getBoutton() {
-		return boutton;
-	}
-	public void setBoutton(JButton boutton) {
-		this.boutton = boutton;
-	}
+
+
 	public int getX() {
 		return x;
 	}
@@ -26,5 +25,11 @@ public class CaseBoutton {
 	}
 	public void setY(int y) {
 		this.y = y;
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		System.out.println(this.x);
+		
 	}
 }

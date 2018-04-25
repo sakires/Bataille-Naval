@@ -4,7 +4,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
-import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 //instruction a faire dans l ordre ligne 41 puis 188 et enfin 235
@@ -168,7 +167,7 @@ public class GrilleBoutton extends JPanel implements ActionListener{
 //////////////////////////// Constructeur //////////////////////////////
 	
 	public GrilleBoutton() {
-		
+		this.listeBoutton = new ArrayList<CaseBoutton>();
 		//Instantiation de la premiere horizontale
 		this.h_a = new JLabel("a");
 		this.h_b = new JLabel("b");
@@ -306,63 +305,113 @@ public class GrilleBoutton extends JPanel implements ActionListener{
 		
 		//Instantiation Boutton colonne f
 		this.f_1 = new CaseBoutton(6, 1);
+		this.listeBoutton.add(f_1);
 		this.f_2 = new CaseBoutton(6, 2);
+		this.listeBoutton.add(f_2);
 		this.f_3 = new CaseBoutton(6, 3);
+		this.listeBoutton.add(f_3);
 		this.f_4 = new CaseBoutton(6, 4);
+		this.listeBoutton.add(f_4);
 		this.f_5 = new CaseBoutton(6, 5);
+		this.listeBoutton.add(f_5);
 		this.f_6 = new CaseBoutton(6, 6);
+		this.listeBoutton.add(f_6);
 		this.f_7 = new CaseBoutton(6, 7);
-		this.f_8 = new CaseBoutton(6, 8);		
+		this.listeBoutton.add(f_7);
+		this.f_8 = new CaseBoutton(6, 8);	
+		this.listeBoutton.add(f_8);
 		this.f_9 = new CaseBoutton(6, 9);
+		this.listeBoutton.add(f_9);
 		this.f_10 = new CaseBoutton(6, 10);
+		this.listeBoutton.add(f_10);
 		
 		//Instantiation Boutton colonne g
 		this.g_1 = new CaseBoutton(7, 1);
+		this.listeBoutton.add(g_1);
 		this.g_2 = new CaseBoutton(7, 2);
+		this.listeBoutton.add(g_2);
 		this.g_3 = new CaseBoutton(7, 3);
+		this.listeBoutton.add(g_3);
 		this.g_4 = new CaseBoutton(7, 4);
+		this.listeBoutton.add(g_4);
 		this.g_5 = new CaseBoutton(7, 5);
+		this.listeBoutton.add(g_5);
 		this.g_6 = new CaseBoutton(7, 6);
+		this.listeBoutton.add(g_6);
 		this.g_7 = new CaseBoutton(7, 7);
+		this.listeBoutton.add(g_7);
 		this.g_8 = new CaseBoutton(7, 8);
+		this.listeBoutton.add(g_8);
 		this.g_9 = new CaseBoutton(7, 9);
+		this.listeBoutton.add(g_9);
 		this.g_10 = new CaseBoutton(7, 10);
+		this.listeBoutton.add(g_10);
 		
 		//Instantiation Boutton colonne h
 		this.h_1 = new CaseBoutton(8, 1);
+		this.listeBoutton.add(h_1);
 		this.h_2 = new CaseBoutton(8, 2);
+		this.listeBoutton.add(h_2);
 		this.h_3 = new CaseBoutton(8, 3);
+		this.listeBoutton.add(h_3);
 		this.h_4 = new CaseBoutton(8, 4);
-		this.h_5 = new CaseBoutton(8, 5);		
+		this.listeBoutton.add(h_4);
+		this.h_5 = new CaseBoutton(8, 5);
+		this.listeBoutton.add(h_5);
 		this.h_6 = new CaseBoutton(8, 6);
+		this.listeBoutton.add(h_6);
 		this.h_7 = new CaseBoutton(8, 7);
+		this.listeBoutton.add(h_7);
 		this.h_8 = new CaseBoutton(8, 8);
+		this.listeBoutton.add(h_8);
 		this.h_9 = new CaseBoutton(8, 9);
+		this.listeBoutton.add(h_9);
 		this.h_10 = new CaseBoutton(8, 10);
+		this.listeBoutton.add(h_10);
 		
 		//Instantiation Boutton colonne i
 		this.i_1 = new CaseBoutton(9, 1);
+		this.listeBoutton.add(i_1);
 		this.i_2 = new CaseBoutton(9, 2);
+		this.listeBoutton.add(i_2);
 		this.i_3 = new CaseBoutton(9, 3);
+		this.listeBoutton.add(i_3);
 		this.i_4 = new CaseBoutton(9, 4);
+		this.listeBoutton.add(i_4);
 		this.i_5 = new CaseBoutton(9, 5);
+		this.listeBoutton.add(i_5);
 		this.i_6 = new CaseBoutton(9, 6);
+		this.listeBoutton.add(i_6);
 		this.i_7 = new CaseBoutton(9, 7);
+		this.listeBoutton.add(i_7);
 		this.i_8 = new CaseBoutton(9, 8);
+		this.listeBoutton.add(i_8);
 		this.i_9 = new CaseBoutton(9, 9);
+		this.listeBoutton.add(i_9);
 		this.i_10 = new CaseBoutton(9, 10);
+		this.listeBoutton.add(i_10);
 		
 		//Instantiation Boutton colonne j
 		this.j_1 = new CaseBoutton(10, 1);
+		this.listeBoutton.add(j_1);
 		this.j_2 = new CaseBoutton(10, 2);
+		this.listeBoutton.add(j_2);
 		this.j_3 = new CaseBoutton(10, 3);
+		this.listeBoutton.add(j_3);
 		this.j_4 = new CaseBoutton(10, 4);
+		this.listeBoutton.add(j_4);
 		this.j_5 = new CaseBoutton(10, 5);
+		this.listeBoutton.add(j_5);
 		this.j_6 = new CaseBoutton(10, 6);
+		this.listeBoutton.add(j_6);
 		this.j_7 = new CaseBoutton(10, 7);
+		this.listeBoutton.add(j_7);
 		this.j_8 = new CaseBoutton(10, 8);
+		this.listeBoutton.add(j_8);
 		this.j_9 = new CaseBoutton(10, 9);
+		this.listeBoutton.add(j_9);
 		this.j_10 = new CaseBoutton(10, 10);
+		this.listeBoutton.add(j_10);
 		
 		
 		//Declaration du layout
@@ -383,140 +432,148 @@ public class GrilleBoutton extends JPanel implements ActionListener{
 		
 		//Ligne 2
 		this.add(v_1);
-		this.add(a_1.getBoutton()); //ajouter .getBoutton() pour les add des variables ne commencant pas par v_* 
-		this.add(b_1.getBoutton());
-		this.add(c_1.getBoutton());
-		this.add(d_1.getBoutton());
-		this.add(e_1.getBoutton());
-		this.add(f_1.getBoutton());
-		this.add(g_1.getBoutton());
-		this.add(h_1.getBoutton());
-		this.add(i_1.getBoutton());
-		this.add(j_1.getBoutton());
+		this.add(a_1); //ajouter .getBoutton() pour les add des variables ne commencant pas par v_* 
+		this.add(b_1);
+		this.add(c_1);
+		this.add(d_1);
+		this.add(e_1);
+		this.add(f_1);
+		this.add(g_1);
+		this.add(h_1);
+		this.add(i_1);
+		this.add(j_1);
 		
 		//Ligne 3
 		this.add(v_2);
-		this.add(a_2.getBoutton());
-		this.add(b_2.getBoutton());
-		this.add(c_2.getBoutton());
-		this.add(d_2.getBoutton());
-		this.add(e_2.getBoutton());
-		this.add(f_2.getBoutton());
-		this.add(g_2.getBoutton());
-		this.add(h_2.getBoutton());
-		this.add(i_2.getBoutton());
-		this.add(j_2.getBoutton());
+		this.add(a_2);
+		this.add(b_2);
+		this.add(c_2);
+		this.add(d_2);
+		this.add(e_2);
+		this.add(f_2);
+		this.add(g_2);
+		this.add(h_2);
+		this.add(i_2);
+		this.add(j_2);
 		
 		//Ligne 4
 		this.add(v_3);
-		this.add(a_3.getBoutton());
-		this.add(b_3.getBoutton());
-		this.add(c_3.getBoutton());
-		this.add(d_3.getBoutton());
-		this.add(e_3.getBoutton());
-		this.add(f_3.getBoutton());
-		this.add(g_3.getBoutton());
-		this.add(h_3.getBoutton());
-		this.add(i_3.getBoutton());
-		this.add(j_3.getBoutton());
+		this.add(a_3);
+		this.add(b_3);
+		this.add(c_3);
+		this.add(d_3);
+		this.add(e_3);
+		this.add(f_3);
+		this.add(g_3);
+		this.add(h_3);
+		this.add(i_3);
+		this.add(j_3);
 		
 		//Ligne 5
 		this.add(v_4);
-		this.add(a_4.getBoutton());
-		this.add(b_4.getBoutton());
-		this.add(c_4.getBoutton());
-		this.add(d_4.getBoutton());
-		this.add(e_4.getBoutton());
-		this.add(f_4.getBoutton());
-		this.add(g_4.getBoutton());
-		this.add(h_4.getBoutton());
-		this.add(i_4.getBoutton());
-		this.add(j_4.getBoutton());
+		this.add(a_4);
+		this.add(b_4);
+		this.add(c_4);
+		this.add(d_4);
+		this.add(e_4);
+		this.add(f_4);
+		this.add(g_4);
+		this.add(h_4);
+		this.add(i_4);
+		this.add(j_4);
 		
 		//Ligne 6
 		this.add(v_5);
-		this.add(a_5.getBoutton());
-		this.add(b_5.getBoutton());
-		this.add(c_5.getBoutton());
-		this.add(d_5.getBoutton());
-		this.add(e_5.getBoutton());
-		this.add(f_5.getBoutton());
-		this.add(g_5.getBoutton());
-		this.add(h_5.getBoutton());
-		this.add(i_5.getBoutton());
-		this.add(j_5.getBoutton());
+		this.add(a_5);
+		this.add(b_5);
+		this.add(c_5);
+		this.add(d_5);
+		this.add(e_5);
+		this.add(f_5);
+		this.add(g_5);
+		this.add(h_5);
+		this.add(i_5);
+		this.add(j_5);
 		
 		//Ligne 7
 		this.add(v_6);
-		this.add(a_6.getBoutton());
-		this.add(b_6.getBoutton());
-		this.add(c_6.getBoutton());
-		this.add(d_6.getBoutton());
-		this.add(e_6.getBoutton());
-		this.add(f_6.getBoutton());
-		this.add(g_6.getBoutton());
-		this.add(h_6.getBoutton());
-		this.add(i_6.getBoutton());
-		this.add(j_6.getBoutton());
+		this.add(a_6);
+		this.add(b_6);
+		this.add(c_6);
+		this.add(d_6);
+		this.add(e_6);
+		this.add(f_6);
+		this.add(g_6);
+		this.add(h_6);
+		this.add(i_6);
+		this.add(j_6);
 		
 		//Ligne 8
 		this.add(v_7);
-		this.add(a_7.getBoutton());
-		this.add(b_7.getBoutton());
-		this.add(c_7.getBoutton());
-		this.add(d_7.getBoutton());
-		this.add(e_7.getBoutton());
-		this.add(f_7.getBoutton());
-		this.add(g_7.getBoutton());
-		this.add(h_7.getBoutton());
-		this.add(i_7.getBoutton());
-		this.add(j_7.getBoutton());
+		this.add(a_7);
+		this.add(b_7);
+		this.add(c_7);
+		this.add(d_7);
+		this.add(e_7);
+		this.add(f_7);
+		this.add(g_7);
+		this.add(h_7);
+		this.add(i_7);
+		this.add(j_7);
 		
 		//Ligne 9
 		this.add(v_8);
-		this.add(a_8.getBoutton());
-		this.add(b_8.getBoutton());
-		this.add(c_8.getBoutton());
-		this.add(d_8.getBoutton());
-		this.add(e_8.getBoutton());
-		this.add(f_8.getBoutton());
-		this.add(g_8.getBoutton());
-		this.add(h_8.getBoutton());
-		this.add(i_8.getBoutton());
-		this.add(j_8.getBoutton());
+		this.add(a_8);
+		this.add(b_8);
+		this.add(c_8);
+		this.add(d_8);
+		this.add(e_8);
+		this.add(f_8);
+		this.add(g_8);
+		this.add(h_8);
+		this.add(i_8);
+		this.add(j_8);
 		
 		//Ligne 10
 		this.add(v_9);
-		this.add(a_9.getBoutton());
-		this.add(b_9.getBoutton());
-		this.add(c_9.getBoutton());
-		this.add(d_9.getBoutton());
-		this.add(e_9.getBoutton());
-		this.add(f_9.getBoutton());
-		this.add(g_9.getBoutton());
-		this.add(h_9.getBoutton());
-		this.add(i_9.getBoutton());
-		this.add(j_9.getBoutton());
+		this.add(a_9);
+		this.add(b_9);
+		this.add(c_9);
+		this.add(d_9);
+		this.add(e_9);
+		this.add(f_9);
+		this.add(g_9);
+		this.add(h_9);
+		this.add(i_9);
+		this.add(j_9);
 		
 		//Ligne 11
 		this.add(v_10);
-		this.add(a_10.getBoutton());		
-		this.add(b_10.getBoutton());
-		this.add(c_10.getBoutton());
-		this.add(d_10.getBoutton());
-		this.add(e_10.getBoutton());
-		this.add(f_10.getBoutton());
-		this.add(g_10.getBoutton());
-		this.add(h_10.getBoutton());
-		this.add(i_10.getBoutton());
-		this.add(j_10.getBoutton());
-
+		this.add(a_10);		
+		this.add(b_10);
+		this.add(c_10);
+		this.add(d_10);
+		this.add(e_10);
+		this.add(f_10);
+		this.add(g_10);
+		this.add(h_10);
+		this.add(i_10);
+		this.add(j_10);
+		
+		
+		for (int i= 0 ; i<this.listeBoutton.size();i++){
+			listeBoutton.get(i).addActionListener(listeBoutton.get(i));
+		}
+	
 	}
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		
-		
+		int i = 0;
+		while (!(e.getSource().equals(listeBoutton.get(i)))){
+			i++;
+		}
+		System.out.println(listeBoutton.get(i).getX());
 		
 	}	
 }
