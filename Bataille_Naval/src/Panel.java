@@ -27,5 +27,11 @@ public class Panel extends JPanel implements ActionListener {
 		this.add(sud, BorderLayout.SOUTH);
 	}
 
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
 
 }

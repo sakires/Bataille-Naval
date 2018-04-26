@@ -168,7 +168,7 @@ public class GrilleBoutton extends JPanel implements ActionListener{
 //////////////////////////// Constructeur //////////////////////////////
 	
 	public GrilleBoutton() {
-		
+		listeBoutton = new ArrayList<CaseBoutton>();
 		//Instantiation de la premiere horizontale
 		this.h_a = new JLabel("a");
 		this.h_b = new JLabel("b");
@@ -510,12 +510,17 @@ public class GrilleBoutton extends JPanel implements ActionListener{
 		this.add(h_10.getBoutton());
 		this.add(i_10.getBoutton());
 		this.add(j_10.getBoutton());
-
+		
+		for (int i = 0;i<listeBoutton.size();i++) {
+			listeBoutton.get(i).getBoutton().addActionListener(this);
+		}
 	}
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		
+		//if (e.getSource().equals(a_1.getBoutton()))
+			System.out.println("marche");
+			
 		
 		
 	}	
