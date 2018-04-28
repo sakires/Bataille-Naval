@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Bateau {
+public abstract class Bateau {
 	private int taille;
 	private ArrayList<MorceauBateau> composantBateau;
 	
